@@ -1,6 +1,7 @@
 *::before,
 *::after {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 :root {
   --fw-light: 300;
@@ -15,7 +16,8 @@
   --clr-gray: #989898;
   --clr-dark: #444;
   --clr-accent: #d06d6d;
-  --clr-accent-dark: #613131; }
+  --clr-accent-dark: #613131;
+}
 
 .sr-only:not(:focus):not(:active) {
   clip: rect(0 0 0 0);
@@ -24,7 +26,8 @@
   overflow: hidden;
   position: absolute;
   white-space: nowrap;
-  width: 1px; }
+  width: 1px;
+}
 
 body {
   margin: 0;
@@ -32,6 +35,5 @@ body {
   line-height: 1.6;
   background-image: url(./img/mars.jpeg);
   height: 100vh;
-  overflow: hidden; }
-
-/*# sourceMappingURL=main.css.map */
+  overflow: hidden;
+}
