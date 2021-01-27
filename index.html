@@ -34,24 +34,44 @@
           <p class="sr-only">45deg</p>
           <div class="wind__arrow"></div>
         </div>
-
-        <div class="info">
-          <p>
-            InSight is taking daily weather measurements (temperature, wind,
-            pressure) on the surface of Mars at Elysium Plantitia, a flat,
-            smooth plain near Mars' equator
-          </p>
-          <p>
-            This is only a part of InSight's mission
-            <a href="https://mars.nasa.gov/insight/mission/overview/"
-              >Click here</a
-            >
-            to find out more
-          </p>
-        </div>
+      </div>
+      <div class="info">
+        <p>
+          InSight is taking daily weather measurements (temperature, wind,
+          pressure) on the surface of Mars at Elysium Plantitia, a flat, smooth
+          plain near Mars' equator
+        </p>
+        <p>
+          This is only a part of InSight's mission
+          <a href="https://mars.nasa.gov/insight/mission/overview/"
+            >Click here</a
+          >
+          to find out more
+        </p>
+      </div>
+      <div class="unit">
+        <label for="cel">⁰C</label>
+        <input type="radio" id="cel" name="unit" checked />
+        <!-- when unit__toggle is clicked checkbox needs to change -->
+        <button class="unit__toggle"></button>
+        <label for="fah">⁰F</label>
+        <input type="radio" id="fah" name="unit" />
       </div>
     </main>
 
-    <div class="previous-weather"></div>
+    <div class="previous-weather">
+      <label for="weather-toggle" class="show-previous-weather-label"
+        ><span class="sr-only">Show Previous Weather</span></label
+      >
+      <input
+        type="checkbox"
+        id="weather-toggle"
+        class="show-previous-weather-toggle"
+      />
+      <h2 class="main-title">Previous 7 days</h2>
+      <div class="previous-days">
+        <div class="previous-day"></div>
+      </div>
+    </div>
   </body>
 </html>
