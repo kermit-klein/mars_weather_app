@@ -36,6 +36,11 @@ body {
   color: var(--clr-light);
   background-size: cover; }
 
+a {
+  color: var(--clr-accent); }
+  a:hover {
+    color: var(--clr-accent-dark); }
+
 h1,
 h2,
 h3 {
@@ -53,5 +58,13 @@ h3 {
   padding: 2em;
   max-width: 1000px;
   margin: 4em 0 0 4em; }
+
+.section-title {
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-bold);
+  margin: 0; }
+
+.section-title--date {
+  font-size: var(--fs-xl); }
 
 /*# sourceMappingURL=main.css.map */
