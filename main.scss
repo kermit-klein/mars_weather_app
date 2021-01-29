@@ -108,6 +108,16 @@ h3 {
 
 .wind {
   grid-column: 3 / 4;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-self: start;
+  grid-template-rows: min-content 1fr;
+
+  .section-title,
+  .reading {
+    grid-column: 2 / 3;
+  }
+
   &__direction {
     --size: 6rem;
     width: var(--size);
@@ -116,6 +126,7 @@ h3 {
     border-radius: 50%;
     display: grid;
     place-items: center;
+    grid-row: 1 / span 2;
   }
   &__arrow {
     //   update custom prop in Js to update the direction
